@@ -1,0 +1,10 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Home Assistant Community Add-on: Oauth2 Proxy
+# Runs Oauth2 Proxy script
+# ==============================================================================
+
+
+bashio::log.info "Starting Oauth2 Proxy..."
+
+exec /usr/bin/run.sh

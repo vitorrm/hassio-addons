@@ -1,0 +1,27 @@
+---
+name: Oauth2 Proxy
+version: dev
+slug: oauth2-proxy
+description: Oauth2 Proxy for Hass.io
+url: https://github.com/vitorrm/hassio-oauth2-proxy
+init: false
+arch:
+  - amd64
+ports:
+  4180/tcp: 4180
+options:
+  email_domain: yourcompany.com
+  cookie_secure: true
+  cookie_secret: your-secret-goes-here
+  cookie_refresh: 1
+  provider: google
+  client_id: your-client_id-goes-here
+  client_secret: your-client_secret-goes-here
+schema:
+  email_domain: str
+  cookie_secure: bool
+  cookie_secret: str
+  cookie_refresh: int(0,180)
+  provider: list(google|facebook|gitlab|github|oidc|adfs)
+  client_id: str
+  client_secret: str
