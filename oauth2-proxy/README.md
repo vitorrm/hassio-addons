@@ -1,10 +1,11 @@
-# Home Assistant Community Add-on: Example
+# Home Assistant Community Add-on: Oauth2 Proxy
 
-TBD
+Runs [Oauth2 Proxy | <https://oauth2-proxy.github.io/oauth2-proxy/>] on HomeAssistant and enables you to protect your resources that are behind a NGINX setup
 
 ## About
 
-TBD
+OAuth2 Proxy is a reverse proxy and static file server that provides authentication using Providers (Google, GitHub, and others) to validate accounts by email, domain or group.
+With this addon you will be able to protect your nginx servers with a Home Assistant managed instance of [Oauth2 Proxy | <https://oauth2-proxy.github.io/oauth2-proxy/>]
 
 ## WARNING! THIS IS AN EDGE VERSION
 
