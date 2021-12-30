@@ -20,7 +20,8 @@ RUN apk add --no-cache ca-certificates \
     && tar xzvf oauth2-proxy.tar.gz \
     && cp $ARCHIVE/oauth2-proxy /usr/bin \
     && chmod +x /usr/bin/oauth2-proxy \
-    && apk del .build-deps
+    && apk del .build-deps \
+    && rm -rf $ARCHIVE oauth2-proxy.tar.gz
 
 # Build arguments
 ARG BUILD_ARCH

@@ -11,17 +11,19 @@ ports:
   4180/tcp: 4180
 options:
   email_domain: yourcompany.com
+  redirect_url: https://internalapp.yourcompany.com/oauth2/callback
   cookie_secure: true
   cookie_secret: your-secret-goes-here
-  cookie_refresh: 1
+  cookie_refresh: 1h
   provider: google
   client_id: your-client_id-goes-here
   client_secret: your-client_secret-goes-here
 schema:
   email_domain: str
+  redirect_url: str
   cookie_secure: bool
   cookie_secret: str
-  cookie_refresh: int(0,180)
+  cookie_refresh: str
   provider: list(google|facebook|gitlab|github|oidc|adfs)
   client_id: str
   client_secret: str
