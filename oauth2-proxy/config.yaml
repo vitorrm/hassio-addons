@@ -24,7 +24,7 @@ options:
   client_secret: your-client_secret-goes-here
   extra-oauth2-params:
     - name: 'parameter-name'
-    - value: 'parameter-value'
+      value: 'parameter-value'
 schema:
   email_domain: "str?"
   authenticated_emails:
@@ -38,5 +38,5 @@ schema:
   client_secret: str
   extra-oauth2-params:
     - name: str
-    - value: str
+      value: str
 image: "ghcr.io/home-assistant/{arch}-oauth2-proxy"
