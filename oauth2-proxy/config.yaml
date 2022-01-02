@@ -24,7 +24,7 @@ options:
   client_secret: your-client_secret-goes-here
   extra-oauth2-params:
     - name: 'parameter-name'
-      value: 'parameter-value'
+      value: 'the-parameter-value-goes-here'
 schema:
   email_domain: "str?"
   authenticated_emails:
