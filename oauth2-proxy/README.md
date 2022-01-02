@@ -2,6 +2,12 @@
 
 Runs [Oauth2 Proxy][oauth2-proxy] on HomeAssistant and enables you to protect your resources that are behind a NGINX setup
 
+![No Support aarch64 Architecture][aarch64-shield]
+![Supports amd64 Architecture][amd64-shield]
+![No Support armhf Architecture][armhf-shield]
+![No Support armv7 Architecture][armv7-shield]
+![No Support i386 Architecture][i386-shield]
+
 ## About
 
 OAuth2 Proxy is a reverse proxy and static file server that provides authentication using Providers (Google, GitHub, and others) to validate accounts by email, domain or group.
@@ -23,3 +29,10 @@ This repository was created for:
 - Developers.
 
 [oauth2-proxy]: https://oauth2-proxy.github.io/oauth2-proxy/
+
+[aarch64-shield]: https://img.shields.io/badge/aarch64-no-green.svg
+[amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
+[armhf-shield]: https://img.shields.io/badge/armhf-no-green.svg
+[armv7-shield]: https://img.shields.io/badge/armv7-no-green.svg
+[i386-shield]: https://img.shields.io/badge/i386-no-green.svg
+
