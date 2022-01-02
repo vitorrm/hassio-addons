@@ -37,6 +37,6 @@ schema:
   client_id: str
   client_secret: str
   extra-oauth2-params:
-    - name: str?
-      value: str?
+    - name: "str?"
+      value: "str?"
 image: "ghcr.io/vitorrm/{arch}-oauth2-proxy"
