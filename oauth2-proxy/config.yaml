@@ -39,4 +39,4 @@ schema:
   extra-oauth2-params:
     - name: str
       value: str
-image: "ghcr.io/home-assistant/{arch}-oauth2-proxy"
+image: "ghcr.io/vitorrm/{arch}-oauth2-proxy"
