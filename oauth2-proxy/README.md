@@ -30,9 +30,9 @@ This repository was created for:
 
 [oauth2-proxy]: https://oauth2-proxy.github.io/oauth2-proxy/
 
-[aarch64-shield]: https://img.shields.io/badge/aarch64-no-green.svg
+[aarch64-shield]: https://img.shields.io/badge/aarch64-no-red.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
-[armhf-shield]: https://img.shields.io/badge/armhf-no-green.svg
-[armv7-shield]: https://img.shields.io/badge/armv7-no-green.svg
-[i386-shield]: https://img.shields.io/badge/i386-no-green.svg
+[armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
+[armv7-shield]: https://img.shields.io/badge/armv7-no-red.svg
+[i386-shield]: https://img.shields.io/badge/i386-no-red.svg
 
