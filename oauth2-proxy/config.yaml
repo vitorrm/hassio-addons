@@ -22,6 +22,9 @@ options:
   provider: google
   client_id: your-client_id-goes-here
   client_secret: your-client_secret-goes-here
+  extra-oauth2-params:
+    - name: 'parameter-name'
+    - value: 'parameter-value'
 schema:
   email_domain: "str?"
   authenticated_emails:
@@ -33,4 +36,7 @@ schema:
   provider: list(google|facebook|gitlab|github|oidc|adfs)
   client_id: str
   client_secret: str
-  image: "ghcr.io/home-assistant/{arch}-oauth2-proxy"
+  extra-oauth2-params:
+    - name: str
+    - value: str
+image: "ghcr.io/home-assistant/{arch}-oauth2-proxy"
