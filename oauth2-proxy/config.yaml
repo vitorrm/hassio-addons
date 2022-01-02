@@ -9,6 +9,8 @@ arch:
   - amd64
 ports:
   4180/tcp: 4180
+ports_description:
+  4180/tcp: Default oauth2-proxy service port
 options:
   email_domain: yourcompany.com
   authenticated_emails:
