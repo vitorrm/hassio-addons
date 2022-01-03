@@ -4,6 +4,7 @@ version: dev
 slug: oauth2-proxy
 description: Oauth2 Proxy for Hass.io
 url: https://github.com/vitorrm/hassio-oauth2-proxy
+image: "ghcr.io/vitorrm/{arch}-oauth2-proxy"
 init: false
 arch:
   - amd64
@@ -39,4 +40,3 @@ schema:
   extra_oauth2_params:
     - name: "str?"
       value: "str?"
-image: "ghcr.io/vitorrm/{arch}-oauth2-proxy"
