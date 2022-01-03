@@ -4,12 +4,12 @@ If you are like me and you end up using home assistant with NGINX addon to proxy
 
 ## What this is NOT
 1. This is not a replacement for Home Assistant login screen. Although you can add oauth2-proxy in front of the home assistant service you will still need to login with home assistant user after you sign-in with OAuth. Also if you do so, you will not be able to use Home Assistant App
-1. This is not a magical protection, you will still need to carefull choose the service paths you want to protect with OAuth on NGINX config
+1. This is not a magical protection, you will still need to carefully choose the service paths you want to protect with OAuth on NGINX config
 
 ## Tested scenarios
-1. This addon was tested with OAuth2 Proxy configure with Google as provider and the NGinx addon used was [Nginx Proxy][nginx-proxy]. 
+1. This addon was tested with OAuth2 Proxy configured with Google as provider and the NGinx addon used was [Nginx Proxy][nginx-proxy]. 
 
-You can probably make this work with other Nginx addons and providers supported by [Oauth2 Proxy][oauth2-proxy], but it will require you some exploring, if you do make it work with other addons/providers, please report back so we can add more success cases here.
+You can probably make this work with other Nginx addons and providers supported by [Oauth2 Proxy][oauth2-proxy], however it will require that you do some exploring, but if you do make it work with other addons/providers, please report back so we can add more success cases here.
 
 ## Installation
 
