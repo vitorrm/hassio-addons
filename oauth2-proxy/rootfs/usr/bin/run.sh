@@ -51,7 +51,7 @@ main() {
         local param_name=""
         local param_value=""
         for extra_param in ${extra_oauth2_params[@]}; do
-            param_name=$(jq '.name' <<< "$extra_param")
+            param_name=$(jq '.name' <<< "$extra_param" | tr -d '"')
             param_value=$(jq '.value' <<< "$extra_param")
             if [[ ! -z "${param_name}" &&  ! -z "${param_value}" ]]; then
                 oauth2_params+=(--${param_name}=${param_value})
