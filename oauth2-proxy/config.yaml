@@ -22,7 +22,7 @@ options:
   provider: google
   client_id: your-client_id-goes-here
   client_secret: your-client_secret-goes-here
-  extra-oauth2-params:
+  extra_oauth2_params:
     - name: 'parameter-name'
       value: 'the-parameter-value-goes-here'
 schema:
@@ -36,7 +36,7 @@ schema:
   provider: list(google|facebook|gitlab|github|oidc|adfs)
   client_id: str
   client_secret: str
-  extra-oauth2-params:
+  extra_oauth2_params:
     - name: "str?"
       value: "str?"
 image: "ghcr.io/vitorrm/{arch}-oauth2-proxy"

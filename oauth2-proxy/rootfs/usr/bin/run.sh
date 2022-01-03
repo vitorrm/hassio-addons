@@ -14,6 +14,7 @@ main() {
     local provider=$(bashio::config 'provider')
     local client_id=$(bashio::config 'client_id')
     local client_secret=$(bashio::config 'client_secret')
+    local extra_oauth2_params=$(bashio::config 'extra_oauth2_params')
 
     bashio::log.info "Starting OAuth2 Proxy"
 
@@ -44,6 +45,10 @@ main() {
         printf '%s\n' "${arr2[@]}" > /data/authenticated_emails.txt
         oauth2_params+=(--authenticated-emails-file=/data/authenticated_emails.txt)
     fi
+
+    for extra_param in ${extra_oauth2_params}; do
+        echo "EXTRA ${extra_param}"
+    done
 
     /usr/bin/oauth2-proxy "${oauth2_params[@]}"
 }
