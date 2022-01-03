@@ -49,6 +49,7 @@ main() {
     for extra_param in ${extra_oauth2_params}; do
         echo "EXTRA ${extra_param}"
     done
+    
     /usr/bin/oauth2-proxy "${oauth2_params[@]}"
 }
 
