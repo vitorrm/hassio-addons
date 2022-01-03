@@ -46,10 +46,19 @@ main() {
         oauth2_params+=(--authenticated-emails-file=/data/authenticated_emails.txt)
     fi
 
-    for extra_param in ${extra_oauth2_params}; do
-        echo "EXTRA ${extra_param}"
-    done
-    
+    #Adding extra oauth2 parameters
+    if [[ ${extra_oauth2_params[@]} ]]; then
+        local param_name=""
+        local param_value=""
+        for extra_param in ${extra_oauth2_params[@]}; do
+            param_name=$(jq '.name' <<< "$extra_param")
+            param_value=$(jq '.value' <<< "$extra_param")
+            if [[ ! -z "${param_name}" &&  ! -z "${param_value}" ]]; then
+                oauth2_params+=(--${param_name}=${param_value})
+            fi
+        done
+    fi
+
     /usr/bin/oauth2-proxy "${oauth2_params[@]}"
 }
 
