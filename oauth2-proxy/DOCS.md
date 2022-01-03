@@ -1,6 +1,15 @@
 # Home Assistant Community Add-on: Oauth2 Proxy
 
-TBD
+If you are like me and you end up using home assistant with NGINX addon to proxy to a lot of services in your little private server, you can use this plugin to protect some of the not well protected services with [Oauth2 Proxy][oauth2-proxy]
+
+## What this is NOT
+1. This is not a replacement for Home Assistant login screen. Although you can add oauth2-proxy in front of the home assistant service you will still need to login with home assistant user after you sign-in with OAuth. Also if you do so, you will not be able to use Home Assistant App
+1. This is not a magical protection, you will still need to carefull choose the service paths you want to protect with OAuth on NGINX config
+
+## Tested scenarios
+1. This addon was tested with OAuth2 Proxy configure with Google as provider and the NGinx addon used was [Nginx Proxy][nginx-proxy]. 
+
+You can probably make this work with other Nginx addons and providers supported by [Oauth2 Proxy][oauth2-proxy], but it will require you some exploring, if you do make it work with other addons/providers, please report back so we can add more success cases here.
 
 ## Installation
 
@@ -16,7 +25,7 @@ TBD
 
 ## Authors & contributors
 
-TBD
+Vitor R Munhoz \<vitor.rm@gmail.com\>
 
 ## License
 
@@ -43,3 +52,5 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 [semver]: http://semver.org/spec/v2.0.0.html
+[oauth2-proxy]: https://oauth2-proxy.github.io/oauth2-proxy/
+[nginx-proxy]: https://github.com/home-assistant/addons/tree/master/nginx_proxy
