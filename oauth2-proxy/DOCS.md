@@ -13,7 +13,7 @@ You can probably make this work with other Nginx addons and providers supported 
 
 ## Installation
 
-- Add the [repository URL](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fvitorrm%2Fhassio-oauth2-proxy) in your **Hass.io > Add-on Store**
+- Add the [repository URL](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fvitorrm%2Fhassio-addons) in your **Hass.io > Add-on Store**
 
 ## Configuration
 
