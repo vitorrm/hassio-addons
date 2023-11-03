@@ -24,9 +24,9 @@ main() {
     if [ "$use_ipv6" = "yes" ]; then
         ip6=`ifconfig | grep inet6 | grep -i global | awk -F " " '{print $3}' | awk -F "/" '{print $1}'`
         ip4=
-        echo "IP address is ${ip6}"
+        bashio::log.info "IP address is ${ip6}"
     else
-        echo "Will detect ipv4 automatically"
+        bashio::log.info "Will detect ipv4 automatically"
         ip6=
         ip4=
     fi
