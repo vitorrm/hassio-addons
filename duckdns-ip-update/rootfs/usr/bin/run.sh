@@ -21,7 +21,7 @@ main() {
     #https://www.duckdns.org/update?domains={YOURVALUE}&token={YOURVALUE}[&ip={YOURVALUE}][&ipv6={YOURVALUE}][&verbose=true][&clear=true]
     bashio::log.info "Starting DuckDNS Ip Update"
 
-   if [ "$use_ipv6" = "yes" ]; then
+    if [ "$use_ipv6" = "yes" ]; then
         ip6=`ifconfig | grep inet6 | grep -i global | awk -F " " '{print $3}' | awk -F "/" '{print $1}'`
         ip4=
         echo "IP address is ${ip6}"
