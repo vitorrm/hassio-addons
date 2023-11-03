@@ -1,0 +1,21 @@
+---
+name: DuckDNS Ip Update
+version: 0.0.1
+slug: duckdns-ip-update
+description: DuckDNS IP Update, updates the IP of your domain if your home server changed IP
+url: https://github.com/vitorrm/hassio-addons
+image: "ghcr.io/vitorrm/{arch}-duckdns-ip-update"
+init: false
+arch:
+  - amd64
+options:
+  your_duckdns_domain: Your domain without .duckdns.org
+  duckdns_token: grab token from ducnkdns account
+  use_ipv6: false
+  check_interval: 30m
+schema:
+  your_duckdns_domain: "str"
+  duckdns_token: "str"
+  use_ipv6: bool
+  # Examples: 5m, 5h, 5d. Minimum is 5 minutes.
+  check_interval: "str"
