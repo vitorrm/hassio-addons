@@ -9,7 +9,7 @@ COPY rootfs /
 RUN apk add --no-cache \
     coreutils=9.0-r2 
 
-# Download OAuth Proxy
+# Download pkgs
 RUN apk add --no-cache ca-certificates \
     && apk add --no-cache --virtual .build-deps bash curl htop runit net-tools \
     && apk del .build-deps 

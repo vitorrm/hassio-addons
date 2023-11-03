@@ -63,6 +63,3 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 [semver]: http://semver.org/spec/v2.0.0.html
-[oauth2-proxy]: https://oauth2-proxy.github.io/oauth2-proxy/
-[oauth2-proxy-docs]: https://oauth2-proxy.github.io/oauth2-proxy/docs/configuration/overview
-[nginx-proxy]: https://github.com/home-assistant/addons/tree/master/nginx_proxy

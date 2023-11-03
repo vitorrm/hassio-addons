@@ -1,4 +1,4 @@
-# Home Assistant Community Add-on: Oauth2 Proxy
+# Home Assistant Community Add-on: DuckDNS IP Update
 
 Runs [DuckDNS][duckdns] IP Update on HomeAssistant
 
