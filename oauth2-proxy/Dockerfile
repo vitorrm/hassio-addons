@@ -5,7 +5,7 @@ FROM ${BUILD_FROM}
 # Copy root filesystem
 COPY rootfs /
 
-ENV OAUTH2_PROXY_VERSION=7.5.0
+ENV OAUTH2_PROXY_VERSION=7.6.0
 ENV ARCHIVE=oauth2-proxy-v$OAUTH2_PROXY_VERSION.linux-amd64
 
 # Setup base
