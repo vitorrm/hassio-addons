@@ -4,7 +4,7 @@
 
 - Updated oauth2 version to 7.8.1
 
-## 0.0.2
+## 0.0.3
 
 - Updated oauth2 version to 7.5.0
 
