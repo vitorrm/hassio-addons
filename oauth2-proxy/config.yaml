@@ -1,6 +1,6 @@
 ---
 name: Oauth2 Proxy
-version: 0.0.6
+version: 0.0.7
 slug: oauth2-proxy
 description: Oauth2 Proxy for Hass.io
 url: https://github.com/vitorrm/hassio-addons
