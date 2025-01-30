@@ -1,11 +1,11 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:11.0.0
+ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:17.1.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
 # Copy root filesystem
 COPY rootfs /
 
-ENV OAUTH2_PROXY_VERSION=7.6.0
+ENV OAUTH2_PROXY_VERSION=7.8.1
 ENV ARCHIVE=oauth2-proxy-v$OAUTH2_PROXY_VERSION.linux-amd64
 
 # Setup base

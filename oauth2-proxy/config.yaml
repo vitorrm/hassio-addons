@@ -1,6 +1,6 @@
 ---
 name: Oauth2 Proxy
-version: 0.0.4
+version: 0.0.5
 slug: oauth2-proxy
 description: Oauth2 Proxy for Hass.io
 url: https://github.com/vitorrm/hassio-addons
@@ -24,8 +24,8 @@ options:
   client_id: your-client_id-goes-here
   client_secret: your-client_secret-goes-here
   extra_oauth2_params:
-    - name: 'parameter-name'
-      value: 'the-parameter-value-goes-here'
+    - name: "parameter-name"
+      value: "the-parameter-value-goes-here"
 schema:
   email_domain: "str?"
   authenticated_emails:
