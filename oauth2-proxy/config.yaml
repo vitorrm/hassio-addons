@@ -1,6 +1,6 @@
 ---
 name: Oauth2 Proxy
-version: 0.0.7
+version: 0.0.8
 slug: oauth2-proxy
 description: Oauth2 Proxy for Hass.io
 url: https://github.com/vitorrm/hassio-addons
@@ -13,10 +13,8 @@ ports:
 ports_description:
   4180/tcp: Default oauth2-proxy service port
 options:
-  email_domain: yourcompany.com
   authenticated_emails:
     - authorized@email.com
-  redirect_url: https://internalapp.yourcompany.com/oauth2/callback
   cookie_secure: true
   cookie_secret: your-secret-goes-here
   cookie_refresh: 1h
