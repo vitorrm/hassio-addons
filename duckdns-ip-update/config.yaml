@@ -1,6 +1,6 @@
 ---
 name: DuckDNS Ip Update
-version: 0.0.2
+version: 0.0.3
 slug: duckdns-ip-update
 description: DuckDNS IP Update, updates the IP of your domain if your home server changed IP
 url: https://github.com/vitorrm/hassio-addons
