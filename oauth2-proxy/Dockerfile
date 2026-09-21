@@ -1,16 +1,16 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:14.3.3
+ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:21.0.5
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
 # Copy root filesystem
 COPY rootfs /
 
-ENV OAUTH2_PROXY_VERSION=7.8.1
+ENV OAUTH2_PROXY_VERSION=7.15.4
 ENV ARCHIVE=oauth2-proxy-v$OAUTH2_PROXY_VERSION.linux-amd64
 
 # Setup base
 RUN apk add --no-cache \
-    coreutils=9.3-r2
+    coreutils=9.11-r1
 
 # Download OAuth Proxy
 RUN apk add --no-cache ca-certificates \
