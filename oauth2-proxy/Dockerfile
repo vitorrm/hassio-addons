@@ -10,7 +10,7 @@ ENV ARCHIVE=oauth2-proxy-v$OAUTH2_PROXY_VERSION.linux-amd64
 
 # Setup base
 RUN apk add --no-cache \
-    coreutils=9.11-r1
+    coreutils=9.11-r0
 
 # Download OAuth Proxy
 RUN apk add --no-cache ca-certificates \

@@ -7,7 +7,7 @@ COPY rootfs /
 
 # Setup base
 RUN apk add --no-cache \
-    coreutils=9.11-r1
+    coreutils=9.11-r0
 
 # Download pkgs
 RUN apk add --no-cache ca-certificates \
