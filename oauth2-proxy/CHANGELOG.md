@@ -1,5 +1,9 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## 0.0.9
+
+- Updated builder from 14.3.3 to 21.0.5
+
 ## 0.0.8
 
 - Updated oauth2 version to 7.15.4
