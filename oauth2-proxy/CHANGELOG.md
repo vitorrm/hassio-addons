@@ -1,5 +1,9 @@
 <!-- https://developers.home-assistant.io/docs/add-ons/presentation#keeping-a-changelog -->
 
+## 0.0.10
+
+- Changed finish script from `s6-svscanctl -t /var/run/s6/services` to `s6-svscanctl -t /run/service`
+
 ## 0.0.9
 
 - Updated builder from 14.3.3 to 21.0.5
