@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:14.3.3
+ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:21.0.53
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -7,7 +7,7 @@ COPY rootfs /
 
 # Setup base
 RUN apk add --no-cache \
-    coreutils=9.3-r2
+    coreutils=9.11-r1
 
 # Download pkgs
 RUN apk add --no-cache ca-certificates \
